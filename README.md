@@ -32,10 +32,11 @@ APIとして使用する場合は、GETメソッドを使用します。
 >更新頻度を変更する場合は、情報元の負荷を考慮して変更してください。
 ## クレジット
 ### 情報元
-[海しる 強震動情報レイヤー](https://www.msil.go.jp/msil/htm/main.html)
+海しる 強震動情報レイヤー  
+https://www.msil.go.jp/msil/htm/main.html
 ### リポジトリ内のファイル
 #### shindo_colors.csv
-ingen084様
+ingen084様  
 https://github.com/ingen084/KyoshinShindoColorMap/blob/master/KyoshinShindoColorMap.csv
 #### pixels.csv
 t0729が作成しました。  
