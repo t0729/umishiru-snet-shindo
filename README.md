@@ -21,12 +21,16 @@ APIとして使用する場合は、GETメソッドを使用します。
 ### 使用について
 このツールを使用する場合、クレジットを記載してください。  
 使用の許可は必要はありません。  
+>[!CAUTION]
+>[海洋状況表示システム利用規約](https://www.msil.go.jp/msil/Data/kiyaku_ja.pdf)に従い、出典を必ず記載してください。  
+>例: 海洋状況表示システム ( https://www.msil.go.jp/ )
+
 リポジトリ内にあるファイルについては[クレジット](https://github.com/t0729/umishiru-snet-shindo/edit/main/README.md#%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88)に記載されています。
 ### 安定性について
 動作の安定性や信頼性は、一切保証できません。  
 **自己責任**で使用してください。  
 ### 問い合わせ先
-- [Discordサーバー](https://discord.com/channels/1400090207696719965/1400473646547599432/1400474012693434458)
+- [Discordサーバー](https://discord.gg/R6QeB53AdK)
 - [X(非推奨)](https://x.com/cat_t0729)
 >[!WARNING]
 >更新頻度を変更する場合は、情報元の負荷を考慮して変更してください。
