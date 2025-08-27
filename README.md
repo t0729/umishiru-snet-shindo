@@ -4,9 +4,22 @@
 抽出した情報はhttpでリクエストすることにより配列として取得できます。  
 コードは99%がAIによるものです。Pythonなんて書けません。  
 (ツール名があまりにも適当なのでいい案があればください)
+## 必要なもの
+- Python
+### 必要なパッケージ
+- flask
+- Pillow
+- selenium
+- chromedriver_autoinstaller
+- csv
+### パッケージのインストール
+```
+pip install flask pillow selenium chromedriver-autoinstaller
+```
+pipコマンドを使用し、必要なパッケージをインストールします  
 ## 使用方法
 1. [ダウンロード](https://github.com/t0729/umishiru-snet-shindo/archive/refs/heads/main.zip)します
-2. zipを解凍し、main.pyを実行します。
+2. 解凍して、main.pyを実行します
 3. 20秒ほど待ちます
 4. [ここ](http://127.0.0.1:5000/shindo)にアクセスします  
 
