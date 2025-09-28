@@ -61,7 +61,7 @@ https://www.msil.go.jp/msil/htm/main.html
 ingen084様  
 https://github.com/ingen084/KyoshinShindoColorMap/blob/master/KyoshinShindoColorMap.csv
 #### pixels.csv(新しい解析方法)
-0Quake様
+0Quake様  
 https://github.com/0Quake/Zero-Quake/blob/main/src/Resource/Snet_Points.json
 #### pixels.csv(以前の解析方法)
 t0729が作成しました。  
