@@ -4,6 +4,9 @@
 抽出した情報はhttpでリクエストすることにより配列として取得できます。  
 コードは99%がAIによるものです。Pythonなんて書けません。  
 (ツール名があまりにも適当なのでいい案があればください)
+## 新しい解析方法について
+v0.2で新しい解析方法に変更しました。  
+以前の解析方法を使用したい場合は、[ここ](https://github.com/t0729/umishiru-snet-shindo/tree/main/以前の解析方法)から使用できます。
 ## 必要なもの
 - Python
 ### 必要なパッケージ
@@ -30,7 +33,8 @@ APIとして使用する場合は、GETメソッドを使用します。
 ```
 [-2.5,-2.3,-1.0,-0.9,-0.6,-1.3,-1.8,-2.3,-3.0, (省略) ]
 ```
-配列の順番は[ここ](https://github.com/t0729/umishiru-snet-shindo/blob/main/station_code.md)に記載されています。
+配列の順番は[ここ](https://github.com/t0729/umishiru-snet-shindo/blob/main/pixels.csv)を確認してください。　　
+7.0は解析の失敗によるものか無効になっている観測点です。表示しないように対策を行ってください。
 ## その他
 ### 使用について
 このツールを使用する場合、クレジットを記載してください。  
@@ -56,6 +60,9 @@ https://www.msil.go.jp/msil/htm/main.html
 #### shindo_colors.csv
 ingen084様  
 https://github.com/ingen084/KyoshinShindoColorMap/blob/master/KyoshinShindoColorMap.csv
-#### pixels.csv
+#### pixels.csv(新しい解析方法)
+0Quake様
+https://github.com/0Quake/Zero-Quake/blob/main/src/Resource/Snet_Points.json
+#### pixels.csv(以前の解析方法)
 t0729が作成しました。  
 使用に許可は必要ありませんが、ライセンスを記述してください。
