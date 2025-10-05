@@ -5,13 +5,18 @@
 コードは99%がAIによるものです。Pythonなんて書けません。  
 (ツール名があまりにも適当なのでいい案があればください)
 ## リリースノート
-### v0.3(最新のバージョン)
-取得座標の更新
-### [v0.2](https://github.com/t0729/umishiru-snet-shindo/tree/4c5e7799dc045601b93b20a7061100df251b765f)
-解析方法の変更  
-[0Quake様のSnet_Points](https://github.com/0Quake/Zero-Quake/blob/main/src/Resource/Snet_Points.json)を取得座標として使用
-### [v0.1](https://github.com/t0729/umishiru-snet-shindo/tree/c01c4ba50242311ca269c08ffd168a8b4d561031)
-公開
+### v0.3
+- 取得座標の更新
+- キャッシュ回避の追加
+### v0.2
+- 解析方法の変更  
+- [0Quake様のSnet_Points](https://github.com/0Quake/Zero-Quake/blob/main/src/Resource/Snet_Points.json)を取得座標として使用
+
+[ここ](https://github.com/t0729/umishiru-snet-shindo/tree/4c5e7799dc045601b93b20a7061100df251b765f)から使用できます。
+### v0.1
+- 公開
+
+[ここ](https://github.com/t0729/umishiru-snet-shindo/tree/c01c4ba50242311ca269c08ffd168a8b4d561031)から使用できます。
 ## 必要なもの
 - Python
 ### 必要なパッケージ
@@ -48,7 +53,7 @@ APIとして使用する場合は、GETメソッドを使用します。
 >[海洋状況表示システム利用規約](https://www.msil.go.jp/msil/Data/kiyaku_ja.pdf)に従い、出典を必ず記載してください。  
 >例: 海洋状況表示システム ( https://www.msil.go.jp/ )
 
-リポジトリ内にあるファイルについては[クレジット](https://github.com/t0729/umishiru-snet-shindo/edit/main/README.md#%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88)に記載されています。
+リポジトリ内にあるファイルについては[クレジット](https://github.com/t0729/umishiru-snet-shindo/tree/c01c4ba50242311ca269c08ffd168a8b4d561031)に記載されています。
 ### 安定性について
 動作の安定性や信頼性は、一切保証できません。  
 **自己責任**で使用してください。  
