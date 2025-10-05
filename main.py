@@ -41,18 +41,36 @@ def rgb_to_shindo(r, g, b):
 
 def fetch_latest_msilstarttime():
     try:
-        r = requests.get(QUERY_URL, verify=False, timeout=10)
+        # キャッシュ回避のためにタイムスタンプ付きでリクエスト
+        params = {
+            "f": "json",
+            "where": "1=1",
+            "returnGeometry": "false",
+            "outFields": "msilstarttime",
+            "_": int(time.time()),  # ← キャッシュバスター
+        }
+
+        r = requests.get(
+            "https://www.msil.go.jp/arcgis/rest/services/Msil/DisasterPrevImg1/ImageServer/query",
+            params=params,
+            verify=False,
+            timeout=10,
+        )
         r.raise_for_status()
         data = r.json()
+
         features = data.get("features", [])
         if not features:
+            print("msilstarttime取得: featuresが空")
             return None
+
         latest_time = max(
             int(elm["attributes"]["msilstarttime"])
             for elm in features
-            if elm["attributes"].get("msilstarttime")
+            if elm.get("attributes") and elm["attributes"].get("msilstarttime")
         )
         return latest_time
+
     except Exception as e:
         print("msilstarttime取得エラー:", e)
         return None
@@ -62,7 +80,7 @@ def fetch_image(dateTime):
         "f": "image",
         "time": f"{dateTime}%2C{dateTime}",
         "bbox": "13409547.546603577,2713376.239114911,16907305.960932314,5966536.162931148",
-        "size": "400,400",
+        "size": "1000,1000",
     }
     r = requests.get(IMAGE_URL, params=params, verify=False)
     r.raise_for_status()

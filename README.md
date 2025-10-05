@@ -4,9 +4,14 @@
 抽出した情報はhttpでリクエストすることにより配列として取得できます。  
 コードは99%がAIによるものです。Pythonなんて書けません。  
 (ツール名があまりにも適当なのでいい案があればください)
-## 新しい解析方法について
-v0.2で新しい解析方法に変更しました。  
-以前の解析方法を使用したい場合は、[ここ](https://github.com/t0729/umishiru-snet-shindo/tree/main/以前の解析方法)から使用できます。
+## リリースノート
+### v0.3(最新のバージョン)
+取得座標の更新
+### [v0.2](https://github.com/t0729/umishiru-snet-shindo/tree/4c5e7799dc045601b93b20a7061100df251b765f)
+解析方法の変更  
+[0Quake様のSnet_Points](https://github.com/0Quake/Zero-Quake/blob/main/src/Resource/Snet_Points.json)を取得座標として使用
+### [v0.1](https://github.com/t0729/umishiru-snet-shindo/tree/c01c4ba50242311ca269c08ffd168a8b4d561031)
+公開
 ## 必要なもの
 - Python
 ### 必要なパッケージ
@@ -60,9 +65,9 @@ https://www.msil.go.jp/msil/htm/main.html
 #### shindo_colors.csv
 ingen084様  
 https://github.com/ingen084/KyoshinShindoColorMap/blob/master/KyoshinShindoColorMap.csv
-#### pixels.csv(新しい解析方法)
+#### pixels.csv(v0.2)
 0Quake様  
 https://github.com/0Quake/Zero-Quake/blob/main/src/Resource/Snet_Points.json
-#### pixels.csv(以前の解析方法)
+#### pixels.csv(v0.1とv0.3)
 t0729が作成しました。  
-使用に許可は必要ありませんが、ライセンスを記述してください。
+使用に許可は必要ありません。
